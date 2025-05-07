@@ -1,0 +1,320 @@
+body {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 14px; /* Adjusted padding */
+    padding-bottom: 20px;
+    min-height: 100vh;
+    color: #0F1111;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 348px; /* Specific width from example */
+}
+
+.logo-container {
+    margin-bottom: 18px; /* Adjusted margin */
+}
+
+.amazon-logo {
+    width: 103px;
+    height: 31px; /* Specific height */
+}
+
+.signin-container {
+    background-color: #fff;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    padding: 20px 26px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1); /* Adjusted shadow */
+}
+
+.signin-container h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700; /* Bold */
+    font-size: 13px;
+    line-height: 19px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    color: #0F1111;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    height: 31px; /* Specific height */
+    padding: 3px 7px;
+    background-color: #fff;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: normal;
+}
+
+.form-group input[type="text"].input-focus,
+.form-group input[type="password"].input-focus {
+    border-color: #007185;
+    box-shadow: 0 0 0 3px #C8F3FA, 0 1px 2px rgba(15,17,17,.15) inset;
+    outline: 0;
+}
+
+#displayedEmailContainer {
+    font-size: 13px;
+    color: #0F1111;
+    margin-bottom: 5px;
+    padding-left: 2px;
+}
+
+#displayedEmailContainer .change-link {
+    font-size: 13px;
+    color: #0066c0;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+#displayedEmailContainer .change-link:hover {
+    text-decoration: underline;
+    color: #c45500;
+}
+
+.forgot-password-link-container {
+    text-align: right;
+    margin-top: -10px; /* Overlap slightly with password field bottom margin */
+    margin-bottom: 10px; /* Space before sign-in button */
+}
+
+.forgot-password-link {
+    font-size: 13px;
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+    color: #c45500;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 31px; /* Specific height */
+    padding: 0 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 29px; /* Vertically center text */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin-top: 0; /* Reset margin */
+}
+
+.btn-primary {
+    background: #FFD814; /* New yellow */
+    border-color: #FCD200; /* New yellow border */
+    color: #0F1111;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+}
+
+.btn-primary:hover {
+    background: #F7CA00; /* Darker yellow on hover */
+    border-color: #F2C200;
+}
+
+.legal-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #0F1111;
+    margin-top: 18px;
+    margin-bottom: 22px; /* Adjusted margin */
+}
+
+.legal-text a, .help-links-container a, .footer-links a, .business-signin-link {
+    color: #0066c0;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.legal-text a:hover, .help-links-container a:hover, .footer-links a:hover, .business-signin-link:hover {
+    text-decoration: underline;
+    color: #c45500;
+}
+
+.help-links-container {
+    margin-bottom: 14px;
+}
+
+.need-help-toggle {
+    display: flex; /* For aligning arrow and text */
+    align-items: center;
+    font-size: 13px;
+}
+
+.arrow-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #666; /* Arrow color */
+    margin-right: 6px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.arrow-right.arrow-down {
+    transform: rotate(90deg);
+}
+
+.help-options {
+    margin-top: 5px;
+    padding-left: 15px; /* Indent options */
+}
+
+.help-option {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.business-signin-link-container {
+    margin-top: 14px;
+}
+
+.business-signin-link {
+    font-size: 13px;
+}
+
+.divider {
+    font-size: 12px;
+    color: #767676;
+    text-align: center;
+    position: relative;
+    margin-top: 0; /* Adjusted margin */
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.divider span {
+    background-color: #fff; 
+    padding: 0 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.divider::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 0;
+}
+
+.btn-secondary {
+    background: #EDEFF2; /* Lighter grey */
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    color: #0F1111;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+}
+
+.btn-secondary:hover {
+    background: #E3E6E6;
+}
+
+.create-account-btn {
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #DDD;
+    margin-top: auto;
+}
+
+.footer-links {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    font-size: 11px;
+    margin: 0 7px;
+    color: #0066C0;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #555;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+    .signin-container {
+        padding: 15px 20px;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        box-shadow: none;
+        margin-bottom: 0; /* Remove bottom margin on mobile */
+    }
+    .signin-container h1 {
+        font-size: 24px;
+    }
+    body {
+        padding-top: 0;
+    }
+    .logo-container {
+        padding-top: 14px; /* Add padding back for logo */
+        margin-bottom: 10px;
+    }
+    .divider {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .create-account-btn {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100% - 40px);
+    }
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
