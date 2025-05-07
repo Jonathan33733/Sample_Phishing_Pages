@@ -1,4 +1,4 @@
-Phishing Email Project (Educational Purposes Only)
+# Phishing Email Project (Educational Purposes Only)
 
 Disclaimer: This project is strictly for educational and research purposes. It is designed to help users understand the mechanics of phishing attacks, how to identify them, and how to protect themselves from such malicious activities.
 Under no circumstances should this project or any of its components be used for any actual phishing activities, illegal purposes, or to harm any individual or organization.
